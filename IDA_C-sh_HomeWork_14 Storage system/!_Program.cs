@@ -149,7 +149,7 @@ namespace IDA_C_sh_HomeWork
                                 orderby ageGroup.Age
                                 group ageGroup by ageGroup.Age;*/
 
-            Console.WriteLine("\n*** " + "Найти и вывести на экран все уникальные предметы, которые изучают студенты" + ":");
+    /*        Console.WriteLine("\n*** " + "Найти и вывести на экран все уникальные предметы, которые изучают студенты" + ":");
             
             var hz = (students_list.GroupBy(s => s.Subjects)).GroupBy(s => s);
 
@@ -159,7 +159,7 @@ namespace IDA_C_sh_HomeWork
                 Console.WriteLine(item.Key.Key.Count());
                 //Console.Write($"{item.Key.Count}: {item.Count()}\t");
 
-            }
+            }*/
 
             Console.WriteLine("\n*** " + "Найти и вывести на экран студента с наибольшим количеством изучаемых предметов" + ":");
             foreach (var item in students_list.Where(s => s.Subjects.Count == students_list.Max(s => s.Subjects.Count())))            
