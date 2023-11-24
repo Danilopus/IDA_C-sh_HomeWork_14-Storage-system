@@ -18,7 +18,7 @@ namespace IDA_C_sh_HomeWork_14_Storage_system
      public void PrintData()
         {
             foreach (var item in list)
-                Console.WriteLine(item);
+                Console.WriteLine(item + "\tТип: " +item.GetType());
         }
 
     }
